@@ -8,7 +8,11 @@ The scope of this experiment is to train a RNN with two type of datasets:
 After the train, the algorithm should predict a DNA SANITIZED given in input a string of DNA NOT SANITIZED.
 For experiment i used Tensorflow with Keras and Nucleus Library (https://nucleus-for-genomics-and-ml.readthedocs.io/en/stable/source/nucleus/io/fastq/) to read and manage the fastQ file.
 
-# PREDICION TASK
+### PREDICION TASK
 Given a character, or a sequence of characters, what is the most probable next character? This is the task which allows to train the model. The input to the model will be a sequence of characters, and training the model to predict the output (the following character at each time step).
 
+### RANDOMIC DATASETS
+There is a piece of code that generates random sequence of DNA for each dataset. This is helpfull to watch how accurate is the model(changing the length of sequence/dataset) and how manage it to get the best result.
+
+### ENDING
 During the training of the model i notice that the accuracy of the model is fine for DNA's string length equal or lower to 30. For higher lengths the training need a lot of DNA's string, much bigger datasets.
